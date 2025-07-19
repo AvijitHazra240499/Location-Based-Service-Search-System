@@ -3,10 +3,10 @@ import express from "express";
 import routes from "./routes";
 import swaggerUi from "swagger-ui-express";
 import swaggerJsdoc from "swagger-jsdoc";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 import path from "path";
 
-dotenv.config();
+// dotenv.config();
 
 const app = express();
 app.use(express.json());
