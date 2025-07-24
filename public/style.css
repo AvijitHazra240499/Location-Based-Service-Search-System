@@ -15,7 +15,33 @@ form {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0.5rem 1rem;
-  padding: 0 1rem 1rem;
+  padding: 10px;
+}
+
+/* --- Favourites --- */
+#favourites-section {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+
+.favourite-item, .result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.favourite-icon {
+  cursor: pointer;
+  color: #e44d26; /* A reddish color for the heart */
+  font-size: 1.2em;
+  transition: transform 0.2s;
+}
+
+.favourite-icon:hover {
+  transform: scale(1.2);
 }
 
 .form-row {
